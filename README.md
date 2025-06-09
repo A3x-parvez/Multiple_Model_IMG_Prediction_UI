@@ -107,12 +107,36 @@ Multiple_Model_IMG_Prediction_UI/
 
 ---
 
-
 ## Contributing
 
 Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
 
 ---
+
+## About Me
+
+Hi! I’m **Parvez**, a passionate AI and ML enthusiast and software developer.  
+I love building innovative projects that blend deep learning with practical applications.  
+Feel free to explore my work, reach out, or collaborate on exciting ideas!
+
+---
+
+## Social Media
+
+Connect with me on:  
+
+[![GitHub](https://img.shields.io/badge/GitHub-@A3x--parvez-181717?style=flat&logo=github)](https://github.com/A3x-parvez)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rijwanool_karim-blue?style=flat&logo=linkedin)](https://linkedin.com/in/rijwanool-karim/)  
+
+---
+
+## Contact / Support
+
+If you have any questions or want to get in touch:
+
+- GitHub : [A3x-parvez](https://github.com/A3x-parvez)  
+- Email : rijwanoolkarim143r@gmail.com
+
 
 ## License
 
