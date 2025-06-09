@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Vision Playground</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>AI Vision <span>PlayGround</span></h1>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="model-selector">
+                <h2><i class="fas fa-microchip"></i> Select AI Model</h2>
+                <div class="select-wrapper">
+                    <select id="model-select">
+                        {% for model_name in models %}
+                        <option value="{{ model_name }}">{{ model_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="model-info">
+                    <div class="model-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Ready</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="upload-section">
+                    <h2><i class="fas fa-upload"></i> Upload Image</h2>
+                    <div class="upload-container" id="upload-container">
+                        <div class="upload-inner" id="upload-inner">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your image here</p>
+                            <p class="small">or</p>
+                            <label for="file-upload" class="custom-button">
+                                <i class="fas fa-folder-open"></i> Browse Files
+                            </label>
+                            <input type="file" id="file-upload" accept=".jpg,.jpeg,.png,.bmp" hidden>
+                        </div>
+                        <div class="preview-container" id="preview-container" style="display: none;">
+                            <img id="image-preview" src="" alt="Preview">
+                            <div class="preview-overlay">
+                                <button class="custom-button" id="change-image">
+                                    <i class="fas fa-sync-alt"></i> Change
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="analyze-button" id="analyze-button" disabled>
+                        <i class="fas fa-search"></i> Analyze Image
+                    </button>
+                </div>
+
+                <div class="results-section">
+                    <h2><i class="fas fa-chart-bar"></i> Analysis Results</h2>
+                    <div class="results-container" id="results-container">
+                        <div class="placeholder-message">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Upload an image and click Analyze to see results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading-overlay" id="loading-overlay">
+                <div class="loader">
+                    <div class="loader-inner"></div>
+                </div>
+                <p>Processing your image...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by TensorFlow | <span id="current-year"></span></p>
+            <p class="tips">This is a playground for testing pre-trained models provided by the TensorFlow API, used in ImageNet.</p>
+            <p class="developer-info">Developed by Rijwanool Karim | <a href="https://github.com/A3x-parvez" target="_blank"><i class="fab fa-github"></i> GitHub</a> | <a href="https://www.linkedin.com/in/rijwanool-karim/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

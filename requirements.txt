@@ -1,0 +1,5 @@
+Flask==3.0.3
+tensorflow
+Pillow==10.3.0
+numpy
+gunicorn==22.0.0  # Optional: for production deployment
