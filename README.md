@@ -41,8 +41,7 @@ AI Vision Playground is a web application for testing and comparing various pre-
 ---
 
 ## Screenshots
-
-> _Add screenshots or GIFs here to showcase the UI and features!_
+> UI preview 
 
 ![Screenshot](static/screenshots/demo.png)
 
@@ -52,7 +51,7 @@ AI Vision Playground is a web application for testing and comparing various pre-
 
 1. **Clone the Repository:**
     ```bash
-    git clone [Your Repository URL]
+    git clone https://github.com/A3x-parvez/Multiple_Model_IMG_Prediction_UI.git
     cd Multiple_Model_IMG_Prediction_UI
     ```
 
@@ -91,34 +90,23 @@ AI Vision Playground is a web application for testing and comparing various pre-
 ## Project Structure
 
 ```
-app.py
-README.md
-requirements.txt
-static/
-    css/
-        style.css
-    js/
-        main.js
-    uploads/
-templates/
-    index.html
+Multiple_Model_IMG_Prediction_UI/
+├── README.md
+├── app.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── screenshots/
+│       └── demp.png
+└── templates/
+    └── index.html
 ```
 
 ---
 
-## Deployment
-
-- **Production (Linux/macOS):**
-    ```bash
-    gunicorn app:app
-    ```
-- **Production (Windows):**
-    ```bash
-    pip install waitress
-    waitress-serve --port=5000 app:app
-    ```
-
----
 
 ## Contributing
 
