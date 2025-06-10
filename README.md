@@ -17,8 +17,10 @@
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
+- [About Me](#about-me)
+- [Social Media](#social-media)
+- [Contact / Support](#contact--support)
 - [License](#license)
 
 ---
